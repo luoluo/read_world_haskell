@@ -1,0 +1,16 @@
+Haskell's type system
+    * Strong type:
+        guarantees that a program cannot contain kinds of errors.
+        it will not automatically coerce values from one type to another.
+    * Static type:
+        A compiler knows the type of every value and expression at compile time, before any code is executed.
+    * Type inference
+        A Haskell compiler can automatically deduce the types of almost all expressions in a program.
+
+Basic types:
+    * Char Unicode character
+    * Bool, Int(fixed size), Interger(unbounded size), Double
+
+Composite data types: list and tuple
+    * List head/tail
+    * List/Tuple take/drop fst/snd
