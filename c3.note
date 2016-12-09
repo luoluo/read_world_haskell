@@ -1,0 +1,29 @@
+Pattern matching
+
+Variable naming pattern
+    * The wild card pattern
+        nicerid (Book id _ _) = id
+
+Type synonyms
+    type CustomerID = Int
+    type ReviewBody = String
+
+Record syntax
+    data Customer = Customer {
+        customerID      :: CustomerID
+      , customerName    :: String
+      , customerAddress :: Address
+    } deriving (Show)
+
+Parameterised types
+    data Maybe a = Just a | Nothing
+
+Local Variable
+    let
+    where
+
+case
+    fromMaybe defval wrapped = 
+        case wrapped of
+            Nothing     -> defval
+            Just  value -> value
