@@ -1,0 +1,9 @@
+Haskell module
+    module ExportSomething (SomeValue(..)) where
+    module ExportNothing () where
+    module ExportEverything where
+    import ExportSomething
+
+Compile
+    ghc -c Xx.hs
+    ghc -o result Main.hs Xx.o
