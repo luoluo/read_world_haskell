@@ -1,0 +1,56 @@
+Keyword:
+    * do
+    * break
+
+Infix functions:
+    a `plus` b = a + b  <==> plus a b
+
+List functions:
+    * length
+    * null
+    * head/tail
+    * last/init
+    * append/++/concat/reverse/
+    * and/or
+    * all/any
+    * take/drop/splitAt/takeWhile/span/break (sublist)
+    * elem/filter (search)
+    * zip/zipWith (ops on multi-list)
+    * lines/words (ops on string)
+
+It's not a good idea to bindly transplant such an assumption into haskell.
+
+Partial functions Total functions
+    * Partial functions: only have return value for a subset of valid input.
+    * Total functions: return valid results over their entire input domains.
+
+
+Loops:
+    * tail recursion / structural recursion
+        square (x:xs) = x*x : square xs
+        square []     = []
+        recursive case: deal with a non-empty list.
+        bad case: handle the situation where our input list is empty.
+    * map
+        map square x
+
+    * select piece of input
+        oddList (x:xs) | odd x      = x : oddList xs
+                       | otherwise  = oddList xs
+        oddList _                   = []
+    * filter
+
+    * foldl / foldr  (ATTENTION!)
+
+Anonymous functions:
+
+Partial function application and currying:
+
+Sections
+    (1+) 2
+    map (*3) [23, 3]
+    all (`elem` ['a'..'z']) "Frasdf"
+
+Code reuse:
+    (.)
+    seq
