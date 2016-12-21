@@ -1,0 +1,3 @@
+How I/O fits into the pure, lazy, functional Haskell world.
+
+    putStrLn/getLine
